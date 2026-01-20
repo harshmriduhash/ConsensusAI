@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { api } from '../api';
-import DeleteModal from './DeleteModal';
-import './Sidebar.css';
+import { useState } from "react";
+import { api } from "../api";
+import DeleteModal from "./DeleteModal";
+import "./Sidebar.css";
 
 export default function Sidebar({
   conversations,
@@ -28,7 +28,7 @@ export default function Sidebar({
       // Refresh conversations list
       window.location.reload();
     } catch (error) {
-      console.error('Failed to delete conversation:', error);
+      console.error("Failed to delete conversation:", error);
       setDeleteModalOpen(false);
       setConversationToDelete(null);
     }
@@ -47,12 +47,12 @@ export default function Sidebar({
     const diffHours = Math.floor(diffMs / 3600000);
     const diffDays = Math.floor(diffMs / 86400000);
 
-    if (diffMins < 1) return 'Just now';
+    if (diffMins < 1) return "Just now";
     if (diffMins < 60) return `${diffMins}m ago`;
     if (diffHours < 24) return `${diffHours}h ago`;
     if (diffDays < 7) return `${diffDays}d ago`;
 
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   };
 
   return (
@@ -76,12 +76,12 @@ export default function Sidebar({
             <div
               key={conv.id}
               className={`conversation-item ${
-                conv.id === currentConversationId ? 'active' : ''
+                conv.id === currentConversationId ? "active" : ""
               }`}
               onClick={() => onSelectConversation(conv.id)}
             >
               <div className="conversation-title">
-                {conv.title || 'New Conversation'}
+                {conv.title || "New Conversation"}
               </div>
               <div className="conversation-date">
                 {formatDate(conv.created_at)}
@@ -101,7 +101,7 @@ export default function Sidebar({
         isOpen={deleteModalOpen}
         onClose={handleDeleteCancel}
         onConfirm={handleDeleteConfirm}
-        conversationTitle={conversationToDelete?.title || 'New Conversation'}
+        conversationTitle={conversationToDelete?.title || "New Conversation"}
       />
     </div>
   );
