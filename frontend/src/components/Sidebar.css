@@ -1,0 +1,19 @@
+/* Sidebar styles are mostly in App.css */
+/* These are supplementary styles */
+
+.no-conversations {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  color: var(--color-text-tertiary);
+}
+
+.no-conversations p {
+  font-size: 0.875rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-secondary);
+}
+
+.no-conversations span {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
