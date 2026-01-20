@@ -1,20 +1,20 @@
-import { useState, useEffect, useRef } from 'react';
-import ReactMarkdown from 'react-markdown';
-import Stage1 from './Stage1';
-import Stage2 from './Stage2';
-import Stage3 from './Stage3';
-import './ChatInterface.css';
+import { useState, useEffect, useRef } from "react";
+import ReactMarkdown from "react-markdown";
+import Stage1 from "./Stage1";
+import Stage2 from "./Stage2";
+import Stage3 from "./Stage3";
+import "./ChatInterface.css";
 
 export default function ChatInterface({
   conversation,
   onSendMessage,
   isLoading,
 }) {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -25,13 +25,13 @@ export default function ChatInterface({
     e.preventDefault();
     if (input.trim() && !isLoading) {
       onSendMessage(input);
-      setInput('');
+      setInput("");
     }
   };
 
   const handleKeyDown = (e) => {
     // Submit on Enter (without Shift)
-    if (e.key === 'Enter' && !e.shiftKey) {
+    if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSubmit(e);
     }
@@ -52,7 +52,7 @@ export default function ChatInterface({
         ) : (
           conversation.messages.map((msg, index) => (
             <div key={index} className="message-group">
-              {msg.role === 'user' ? (
+              {msg.role === "user" ? (
                 <div className="user-message">
                   <div className="message-label">You</div>
                   <div className="message-content">
@@ -69,7 +69,9 @@ export default function ChatInterface({
                   {msg.loading?.stage1 && (
                     <div className="stage-loading">
                       <div className="spinner"></div>
-                      <span>Running Stage 1: Collecting individual responses...</span>
+                      <span>
+                        Running Stage 1: Collecting individual responses...
+                      </span>
                     </div>
                   )}
                   {msg.stage1 && <Stage1 responses={msg.stage1} />}
@@ -128,7 +130,7 @@ export default function ChatInterface({
           className="send-button"
           disabled={!input.trim() || isLoading}
         >
-          {isLoading ? 'Thinking...' : 'Send'}
+          {isLoading ? "Thinking..." : "Send"}
         </button>
       </form>
     </div>
