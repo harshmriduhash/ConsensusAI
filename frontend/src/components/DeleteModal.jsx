@@ -1,6 +1,11 @@
-import './DeleteModal.css';
+import "./DeleteModal.css";
 
-export default function DeleteModal({ isOpen, onClose, onConfirm, conversationTitle }) {
+export default function DeleteModal({
+  isOpen,
+  onClose,
+  onConfirm,
+  conversationTitle,
+}) {
   if (!isOpen) return null;
 
   const handleBackdropClick = (e) => {
@@ -15,8 +20,9 @@ export default function DeleteModal({ isOpen, onClose, onConfirm, conversationTi
         <div className="modal-icon">⚠️</div>
         <h2 className="modal-title">Delete Conversation?</h2>
         <p className="modal-message">
-          Are you sure you want to delete "{conversationTitle || 'this conversation'}"?
-          This action cannot be undone.
+          Are you sure you want to delete "
+          {conversationTitle || "this conversation"}"? This action cannot be
+          undone.
         </p>
         <div className="modal-actions">
           <button className="modal-btn modal-btn-cancel" onClick={onClose}>
