@@ -26,7 +26,7 @@ A designated "Chairman" model reviews all original responses and peer evaluation
 - **Better Accuracy**: Multiple perspectives reduce individual model biases and errors
 - **Transparency**: See all individual responses and peer evaluations
 - **Flexibility**: Use any combination of OpenAI, Google, Anthropic, and xAI models
-- **Privacy**: Runs locally
+- **Privacy**: Runs 
 
 ## Quick Start
 
