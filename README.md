@@ -27,7 +27,7 @@ A designated "Chairman" model reviews all original responses and peer evaluation
 - **Transparency**: See all individual responses and peer evaluations
 - **Flexibility**: Use any combination of OpenAI, Google, Anthropic, and xAI models
 - **Privacy**: Runs locally with your own API keys - no third-party intermediaries
-- **Direct API Access**:
+- **Direct API
 
 ## Quick Start
 
