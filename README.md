@@ -37,7 +37,7 @@ A designated "Chairman" model reviews all original responses and peer evaluation
 
 1. **Clone the repository**
 ```bash
-git clone <github>
+git clone <github.com>
 cd consensusai
 ```
 
