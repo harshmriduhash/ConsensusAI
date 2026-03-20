@@ -31,7 +31,7 @@ A designated "Chairman" model reviews all original responses and peer evaluation
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+
-- [uv](https://docs. (Python package manager)
+- [uv](https:// (Python package manager)
 
 ### Installation
 
