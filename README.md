@@ -1,6 +1,5 @@
 # ConsensusAI
 
-![ConsensusAI](header.png)
 
 **Get better answers through AI deliberation and peer review.**
 
