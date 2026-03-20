@@ -1,6 +1,5 @@
 # ConsensusAI
 
-
 **Get better answers through AI deliberation and peer review.**
 
 ConsensusAI is a 3-stage collaborative AI system that brings together multiple leading language models (GPT-4, Gemini, Claude, Grok) to provide well-reasoned, peer-reviewed answers to your questions.
