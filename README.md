@@ -14,7 +14,7 @@ When you submit a question, ConsensusAI executes a three-stage process:
 Your question is sent to all configured AI models in parallel. Each model provides its own independent answer without knowing what the others said. You can view all individual responses in a tab interface.
 
 ### Stage 2: Anonymous Peer Review
-Each model evaluates and ranks all responses (including its own) without knowing which model produced which response. This anonymization prevents bias and ensures objective evaluation based solely on quality, accuracy, and.
+Each model evaluates and ranks all responses (including its own) without knowing which model produced which response. This anonymization prevents bias and ensures objective evaluation based solely on quality, accuracy,
 
 ### Stage 3: Final Synthesis
 A designated "Chairman" model reviews all original responses and peer evaluations to synthesize a comprehensive final answer that represents the collective wisdom of the AI council.
