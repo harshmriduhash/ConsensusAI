@@ -4,7 +4,7 @@
 
 ConsensusAI is a 3-stage collaborative AI system that brings together multiple leading language models (GPT-4, Gemini, Claude, Grok) to provide well-reasoned, peer-reviewed answers to your
 
-Instead of relying on a single AI model, ConsensusAI orchestrates a deliberation process where multiple models independently answer your question, anonymously evaluate each other's responses, and synthesize a final 
+Instead of relying on a single AI model, ConsensusAI orchestrates a deliberation process where multiple models independently answer your question, anonymously evaluate each other's responses, and synthesize a
 
 ## How It Works
 
